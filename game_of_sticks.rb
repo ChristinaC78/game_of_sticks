@@ -1,5 +1,6 @@
 require_relative 'sticks.rb'
 require 'pry'
+
 def take_sticks(player, total_sticks)
   if total_sticks.sticks != 1
     (1..3).include?(player)
@@ -55,19 +56,30 @@ end
 
 def main()
   puts "Welcome to the Game of Sticks!"
-  print "How many sticks are on the table initially? Please choose a number between 10 and 100: "
-  initial_sticks = gets.chomp.to_i
-   if (10..100).include?(initial_sticks)
-     total_sticks = Sticks.new(initial_sticks)
-   else
-     try_again()
-   end
+  puts "Options for Gameplay:"
+  puts "Play against a friend (1)"
+  puts "Play against the computer (2)"
+  print "Which option do you choose? "
+  option = gets.chomp.to_i
+  if option == "1"
+    print "How many sticks are on the table initially? Please choose a number between 10 and 100: "
+    initial_sticks = gets.chomp.to_i
+     if (10..100).include?(initial_sticks)
+       total_sticks = Sticks.new(initial_sticks)
+     else
+       try_again()
+     end
 
-  until total_sticks.sticks == 0
-    total_sticks = whos_turn('Player 1', 'Player 2', total_sticks)
-    game_over(total_sticks)
-    total_sticks = whos_turn('Player 2', 'Player 1', total_sticks)
-    game_over(total_sticks)
+    until total_sticks.sticks == 0
+      total_sticks = whos_turn('Player 1', 'Player 2', total_sticks)
+      game_over(total_sticks)
+      total_sticks = whos_turn('Player 2', 'Player 1', total_sticks)
+      game_over(total_sticks)
+    end
+  elsif option == "2"
+# build comp play
+  else
+    try_again()
   end
 end
 
