@@ -4,8 +4,7 @@ def take_sticks(player, total_sticks)
   if total_sticks.sticks != 1
     (1..3).include?(player)
     total_sticks.sticks = total_sticks.sticks - player
-  elsif total_sticks.sticks == 1
-    (1).include?(player)
+  elsif total_sticks.sticks == 1 && player == 1
     total_sticks.sticks = total_sticks.sticks - player
   else
     try_again()
@@ -46,10 +45,9 @@ def main()
   end
   if total_sticks.sticks == 0
     puts "There are #{total_sticks.sticks} sticks on the board."
-
+    # how to let player know they won!
     try_again()
   end
-
 end
 
 if __FILE__ == $PROGRAM_NAME
