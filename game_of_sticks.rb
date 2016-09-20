@@ -37,9 +37,9 @@ end
 
 def play_again()
   puts "Would you like to play again?"
-  print "Type \'retry\' to try again or \'exit\' to return to the Terminal: "
+  print "Type \'again\' to play again or \'exit\' to return to the Terminal: "
   input = gets.chomp.downcase
-  if input == "retry"
+  if input == "again"
     main
   else
     exit
