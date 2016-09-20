@@ -1,6 +1,6 @@
-# Project Title
+# Pick Up Sticks
 
-The program entitled '.rb' is a basic program intended to help users to ... The program does the following functions...The program will automatically output...
+The program entitled 'game_of_sticks.rb' is a basic program that allows two players to play a game of pick up sticks.  In the beginning, the user is prompted to enter the initial amount of sticks that which the entire game will use in gameplay. Afterwards, players will take turns picking up sticks until there are no sticks left on the table. When there are no sticks remaining, the player who is unable to pick up a stick loses and the player who picked up the last stick wins! Users may play again by entering the appropriate value.
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ Once you have completed the above installation processes your system should be r
 Please complete the following procedure to run the program on a live system:
   1. Open Terminal.
   2. Change your directory to the one that which you have saved this zip file.`cd folder_name`
-  3. Type `.rb` to run the program.
+  3. Type `game_of_sticks.rb` to run the program.
   4. READ all instructions BEFORE adding input.
 
 ## Built With
