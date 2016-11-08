@@ -1,5 +1,3 @@
-require 'pry'
-
 def get_game_mode_option
   puts "Lets play a game of Pick Up Sticks!"
   puts "Options for Gameplay:"
