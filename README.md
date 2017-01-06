@@ -6,7 +6,7 @@ The program entitled 'game_of_sticks.rb' is a basic program that allows two play
 
 The instructions below will help you retrieve a copy of the project to run on your local machine through the Terminal application. Please see deployment for notes on how to deploy the project on a live system.  The instructions provided are for macbook users.
 
-### Prerequisities
+### Prerequisites
 
 Find Terminal - to run program
   1. Open Finder. Finder is available in the Dock.
